@@ -1,0 +1,40 @@
+body {
+  background-color: #C2E9FB;
+  color: #172972;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 6em;
+  font-size: 20px;
+
+}
+
+#choice {
+  text-align: center;
+  background: #172972;
+  color: #FFFFFF;
+  border: 1px;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+#return {
+  display: block;
+  text-align: center;
+  background: #ffffff;
+  color: #172972;
+  border: 1px;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+    margin: auto;
+
+  margin-top: 1em;
+}

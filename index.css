@@ -1,0 +1,97 @@
+/* Main Dashboard */
+body{
+  position: relative;
+  width: 1440px;
+  height: 600px;
+  background: #C2E9FB;}
+/* Heading*/
+h1{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 117px;
+  text-align: center;
+  color: #172972;
+}
+/*Boxes*/
+div{
+  position: absolute;
+  width: 226.76px;
+  height: 226.76px;
+  text-align: center;
+  background: #172972;
+  box-shadow: 0px 3.28631px 16.4316px rgba(0, 0, 0, 0.25);
+  border-radius: 36.1494px;
+}
+.covidgame{
+  left: 226.75px;
+  top: 202.86px;
+}
+.mathgame{
+  left: 603.56px;
+  top: 202.86px;
+}
+.minigame{
+  left: 985.75px;
+  top: 202.86px;
+}
+.vocabgame{
+  left: 226.75px;
+  top: 490.41px;
+}
+.typing{
+  left: 603.56px;
+  top: 490.41px;
+}
+.extra{
+  left: 985.75px;
+  top: 490.41px;
+}
+h2{
+  padding: 60px 70px;
+  position: absolute;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 23.8258px;
+  line-height: 36px;
+  color: #172972;
+  z-index: 1;
+}
+.long{
+  padding: 46px 70px;
+}
+/*for the vocab game h2*/
+.why{
+  top: 1px;
+}
+/* unvisited link */
+a:link {
+  color: #172972;
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+  color: #172972;
+  text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+  color: #172972;
+  text-decoration: none;
+}
+/* selected link */
+a:active {
+  color: #172972;
+  text-decoration: none;
+}
+/*shape things*/
+.blue{
+  position: relative;
+  padding: 25px;
+}
+.gray{
+  position: absolute;
+  top: 30px;
+  left: 15px;
+}

@@ -1,0 +1,78 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background: #C2E9FB;
+  color: #172972;
+  margin: 3em;
+}
+
+strong {
+  text-decoration: underline;
+}
+
+button {
+  background: #172972;
+  color: #FFFFFF;
+  border: 1px;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 20px;
+font-family: 'Poppins', sans-serif;  font-weight: bold;
+}
+button:hover{
+  background:#387780;
+}
+.return{
+  background: white;
+}
+.return:hover{
+  background: white;
+}
+.scoreboard {
+  width: 14em;
+  margin: auto;
+  border: 2px solid #172972;
+}
+.scoreboard h2 {
+  border-bottom: 2px solid #172972;
+  margin: 0;
+  padding: 10px;
+}
+.scoreboard table {
+  margin: 10px auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+.scoreboard th, .scoreboard td {
+  text-align: center;
+}
+.scoreboard td {
+  font-size: 3em;
+  padding: 0 20px;
+}
+
+#status {
+  margin-top: 20px;
+}
+
+/* unvisited link */
+a:link {
+  color: #172972;
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+  color: #172972;
+  text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+  color: #172972;
+  text-decoration: none;
+}
+/* selected link */
+a:active {
+  color: #172972;
+  text-decoration: none;
+}

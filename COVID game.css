@@ -1,0 +1,13 @@
+body {
+    background-color: #C2E9FB;
+    color:#172972;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  
+} 
+COVID-game{
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}

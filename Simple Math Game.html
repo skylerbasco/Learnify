@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<head> 
+    <link href="math.css" rel="stylesheet" type="text/css" />
+    <link href="tictactoe.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins'rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        #frame001 {
+            border: 2px solid #C2E9FB;
+            background-color: #C2E9FB;
+            border-radius: 2px;
+            text-align: center;
+            padding: 5px;
+
+        }
+      .return{
+          border: 1px;
+          border-radius: 30px;
+          padding: 10px 25px;
+          font-size: 20px;
+          font-family: 'Poppins', sans-serif;  font-weight: bold;
+          background-color: white;
+        }
+      
+      #begin-button{
+        border: 1px;
+        border-radius: 30px;
+        padding: 10px 25px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;  
+        font-weight: bold;
+        color: white;
+        background-color: #172972;
+        margin-bottom: 30px;
+      }
+      /* unvisited link */
+    a:link {
+      color: #172972;
+      text-decoration: none;
+    }
+/* visited link */
+  a:visited {
+      color: #172972;
+      text-decoration: none;
+    }
+/* mouse over link */
+  a:hover {
+      color: #172972;
+      text-decoration: none;
+    }
+/* selected link */
+  a:active {
+      color: #172972;
+      text-decoration: none;
+    }
+    </style>
+    <div id="frame001">
+        <h2 id="math-quiz"> Simple Math Game </Game></h2>
+        <text>Question: </text><text id="number001">0</text><text> / 10</text>
+        <hr />
+        <p id="message001"></p>
+        <p id="message002"></p>
+        <p id="show001"></p>
+        <p id="message003"></p>
+        <p id="message005"></p>
+        <p id="message004"></p>
+        <div id="disappear001">
+            <button onclick="begin001()" id="begin-button">Begin</button>
+        </div>
+  <button type='button' class='return'>
+  <a href='index.html'>Return</a>
+</button>
+    </div>
+
+    <script>
+        var a001 = Math.floor(Math.random() * 10);
+        var a002 = Math.floor(Math.random() * 10);
+        var a003 = a001 + a002;
+
+        var b001 = Math.floor(Math.random() * 10);
+        var b002 = Math.floor(Math.random() * 10);
+        var b003 = b001 + b002;
+
+        var c001 = Math.floor(Math.random() * 10);
+        var c002 = Math.floor(Math.random() * 10);
+        var c003 = c001 + c002;
+
+        var d001 = Math.floor(Math.random() * 10);
+        var d002 = Math.floor(Math.random() * 10);
+        var d003 = d001 + d002;
+
+        var e001 = Math.floor(Math.random() * 10);
+        var e002 = Math.floor(Math.random() * 10);
+        var e003 = e001 + e002;
+
+        var f001 = Math.floor(Math.random() * 10);
+        var f002 = Math.floor(Math.random() * 10);
+        var f003 = f001 + f002;
+
+        var g001 = Math.floor(Math.random() * 10);
+        var g002 = Math.floor(Math.random() * 10);
+        var g003 = g001 + g002;
+
+        var h001 = Math.floor(Math.random() * 10);
+        var h002 = Math.floor(Math.random() * 10);
+        var h003 = h001 + h002;
+
+        var i001 = Math.floor(Math.random() * 10);
+        var i002 = Math.floor(Math.random() * 10);
+        var i003 = i001 + i002;
+
+        var j001 = Math.floor(Math.random() * 10);
+        var j002 = Math.floor(Math.random() * 10);
+        var j003 = j001 + j002;
+
+        var z = 0;
+        z++;
+        var y = 0;
+        y++;
+
+        function begin001() {
+            number001.innerHTML = y++;
+            disappear001.innerHTML = "";
+            message001.innerHTML = a001 + "<br />" + "+" + "<br />" + a002 + "<br />" + "__________";
+            message002.innerHTML = "<input type=text id=input001 /> <button onclick=submit001()>Submit</button>";
+        }
+
+        function submit001() {
+            var answer001 = input001.value;
+            show001.innerHTML = answer001;
+            if (answer001 == a003) {
+                z++;
+                message003.innerHTML = "Correct, Good Work!";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question002()>Next</button>";
+            }
+            else {
+                message003.innerHTML = "Sorry You are Incorrect";
+                message002.innerHTML = "";
+                message005.innerHTML = "The Correct Answer Was: " + (a003) ;
+                message004.innerHTML = "<button onclick=question002()>Next</button>";
+            }
+        }
+
+        function question002() {
+            number001.innerHTML = y++;
+            message001.innerHTML = b001 + "<br />" + "+" + "<br />" + b002 + "<br />" + "__________";
+            message002.innerHTML = "<input type=text id=input002 /> <button onclick=submit002()>Submit</button>";
+            message003.innerHTML = "";
+            show001.innerHTML = "";
+            message004.innerHTML = "";
+            
+        }
+
+        function submit002() {
+            var answer001 = input002.value;
+            show001.innerHTML = answer001;
+            if (answer001 == b003) {
+                z++;
+                message003.innerHTML = "Correct";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question003()>Next</button>";
+            }
+            else {
+                message003.innerHTML = "Incorrect";
+                message002.innerHTML = "";
+                message005.innerHTML = "The Correct Answer Was: " + (b003) ;
+                message004.innerHTML = "<button onclick=question003()>Next</button>";
+            }
+        }
+
+        function question003() {
+            number001.innerHTML = y++;
+            message001.innerHTML = c001 + "<br />" + "+" + "<br />" + c002 + "<br />" + "__________";
+            message002.innerHTML = "<input type=text id=input003 /> <button onclick=submit003()>Submit</button>";
+            message003.innerHTML = "";
+            show001.innerHTML = "";
+            message004.innerHTML = "";
+        }
+
+        function submit003() {
+            var answer001 = input003.value;
+            show001.innerHTML = answer001;
+            if (answer001 == c003) {
+                z++;
+                message003.innerHTML = "Correct";
+                message002.innerHTML = "";
+                message005.innerHTML = "The Correct Answer Was: " + (c003) ;
+                message004.innerHTML = "<button onclick=question004()>Next</button>";
+            }
+            else {
+                message003.innerHTML = "Incorrect";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question004()>Next</button>";
+            }
+        }
+
+        function question004() {
+            number001.innerHTML = y++;
+            message001.innerHTML = d001 + "<br />" + "+" + "<br />" + d002 + "<br />" + "__________";
+            message002.innerHTML = "<input type=text id=input004 /> <button onclick=submit004()>Submit</button>";
+            message003.innerHTML = "";
+            show001.innerHTML = "";
+            message004.innerHTML = "";
+        }
+
+        function submit004() {
+            var answer001 = input004.value;
+            show001.innerHTML = answer001;
+            if (answer001 == d003) {
+                z++;
+                message003.innerHTML = "Correct";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question005()>Next</button>";
+            }
+            else {
+                message003.innerHTML = "Incorrect";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question005()>Next</button>";
+            }
+        }
+
+        function question005() {
+            number001.innerHTML = y++;
+            message001.innerHTML = e001 + "<br />" + "+" + "<br />" + e002 + "<br />" + "__________";
+            message002.innerHTML = "<input type=text id=input005 /> <button onclick=submit005()>Submit</button>";
+            message003.innerHTML = "";
+            show001.innerHTML = "";
+            message004.innerHTML = "";
+        }
+
+        function submit005() {
+            var answer001 = input005.value;
+            show001.innerHTML = answer001;
+            if (answer001 == e003) {
+                z++;
+                message003.innerHTML = "Correct";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question006()>Next</button>";
+            }
+            else {
+                message003.innerHTML = "Incorrect";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question006()>Next</button>";
+            }
+        }
+
+        function question006() {
+            number001.innerHTML = y++;
+            message001.innerHTML = f001 + "<br />" + "+" + "<br />" + f002 + "<br />" + "__________";
+            message002.innerHTML = "<input type=text id=input006 /> <button onclick=submit006()>Submit</button>";
+            message003.innerHTML = "";
+            show001.innerHTML = "";
+            message004.innerHTML = "";
+        }
+
+        function submit006() {
+            var answer001 = input006.value;
+            show001.innerHTML = answer001;
+            if (answer001 == f003) {
+                z++;
+                message003.innerHTML = "Correct";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question007()>Next</button>";
+            }
+            else {
+                message003.innerHTML = "Incorrect";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question007()>Next</button>";
+            }
+        }
+
+        function question007() {
+            number001.innerHTML = y++;
+            message001.innerHTML = g001 + "<br />" + "+" + "<br />" + g002 + "<br />" + "__________";
+            message002.innerHTML = "<input type=text id=input007 /> <button onclick=submit007()>Submit</button>";
+            message003.innerHTML = "";
+            show001.innerHTML = "";
+            message004.innerHTML = "";
+        }
+
+        function submit007() {
+            var answer001 = input007.value;
+            show001.innerHTML = answer001;
+            if (answer001 == g003) {
+                z++;
+                message003.innerHTML = "Correct";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question008()>Next</button>";
+            }
+            else {
+                message003.innerHTML = "Incorrect";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question008()>Next</button>";
+            }
+        }
+
+        function question008() {
+            number001.innerHTML = y++;
+            message001.innerHTML = h001 + "<br />" + "+" + "<br />" + h002 + "<br />" + "__________";
+            message002.innerHTML = "<input type=text id=input008 /> <button onclick=submit008()>Submit</button>";
+            message003.innerHTML = "";
+            show001.innerHTML = "";
+            message004.innerHTML = "";
+        }
+
+        function submit008() {
+            var answer001 = input008.value;
+            show001.innerHTML = answer001;
+            if (answer001 == h003) {
+                z++;
+                message003.innerHTML = "Correct";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question009()>Next</button>";
+            }
+            else {
+                message003.innerHTML = "Incorrect";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question009()>Next</button>";
+            }
+        }
+
+        function question009() {
+            number001.innerHTML = y++;
+            message001.innerHTML = i001 + "<br />" + "+" + "<br />" + i002 + "<br />" + "__________";
+            message002.innerHTML = "<input type=text id=input009 /> <button onclick=submit009()>Submit</button>";
+            message003.innerHTML = "";
+            show001.innerHTML = "";
+            message004.innerHTML = "";
+        }
+
+        function submit009() {
+            var answer001 = input009.value;
+            show001.innerHTML = answer001;
+            if (answer001 == i003) {
+                z++;
+                message003.innerHTML = "Correct";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question010()>Next</button>";
+            }
+            else {
+                message003.innerHTML = "Incorrect";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=question010()>Next</button>";
+            }
+        }
+
+        function question010() {
+            number001.innerHTML = y++;
+            message001.innerHTML = j001 + "<br />" + "+" + "<br />" + j002 + "<br />" + "__________";
+            message002.innerHTML = "<input type=text id=input010 /> <button onclick=submit010()>Submit</button>";
+            message003.innerHTML = "";
+            show001.innerHTML = "";
+            message004.innerHTML = "";
+        }
+
+        function submit010() {
+            var answer001 = input010.value;
+            show001.innerHTML = answer001;
+            if (answer001 == j003) {
+                z++;
+                message003.innerHTML = "Correct";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=end001()>Click to see your score </button>";
+            }
+            else {
+                message003.innerHTML = "Incorrect";
+                message002.innerHTML = "";
+                message004.innerHTML = "<button onclick=end001()>End of Quiz</button>";
+            }
+        }
+
+        function end001() {
+            message002.innerHTML = "You scored " + (z - 1) + " out of 10";
+            message003.innerHTML = "Great Job!";
+            show001.innerHTML = "";
+            message004.innerHTML = "<button onclick=repeat001()>Play Again</button>";
+        }
+
+        function repeat001() {
+            location.reload();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+body {
+    background-color: #C2E9FB;
+    color:#172972;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+}
+h1 {
+    line-height: 1em;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    font-size: 2.8em;
+    font-weight: bold;
+}
+h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+
+}
+h3 {
+    font-size: 1.1em;
+    padding: 0;
+    margin: 10px 0 2px 0;
+}
+table {
+    margin: 2% auto;
+    border-collapse: collapse;
+}
+#table_game {
+    position: relative;
+    font-size: 120px;
+    margin: 1% auto;
+    border-collapse: collapse;
+}
+.td_game {
+    border: 4px solid #172972;
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.fixed {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+.td_list {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.th_list {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+#restart {
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.x {
+    color: #FF9D5C;
+    position: relative;
+    top: -8px;
+    font-size: 1.2em;
+    cursor: default;
+}
+.o {
+    color: #A1C4FD;
+    position: relative;
+    top: -7px;
+    font-size: 1.0em;
+    cursor: default;
+}
+
+/* modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* enable scroll if needed */
+    background-color: #C2E9FB; /* fallback color */
+    background-color: #C2E9FB;
+}
+
+/* modal content */
+.modal-content {
+    background-color: #FFFFFF;
+    color: #172972;
+    font-size: 2em;
+    font-weight: bold;
+    /* 16 % from the top and centered */
+    margin: 16% auto;
+    padding: 20px;
+    border: 2px solid #172972;
+    border-radius: 10px;
+    width: 380px;
+    max-width: 80%;
+}
+.modal-content p {
+    margin: 0;
+    padding: 0;
+}
+
+/* close button for modal dialog */
+.close {
+    color: rgb(170, 170, 170);
+    float: right;
+    position: relative;
+    top: -25px;
+    right: -10px;
+    font-size: 34px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #172972;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.win-color {
+    background-color: #FFFFFF;
+}
+
+/* unvisited link */
+a:link {
+  color: #172972;
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+  color: #172972;
+  text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+  color: #172972;
+  text-decoration: none;
+}
+/* selected link */
+a:active {
+  color: #172972;
+  text-decoration: none;
+}
+
+.return{
+  border: 1px;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 20px;
+font-family: 'Poppins', sans-serif;  font-weight: bold;
+  background-color: white;
+}
