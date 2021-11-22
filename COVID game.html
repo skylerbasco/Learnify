@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, 
-                                 inital-scale=1.0">
-  <title>Home page</title>
-    <link rel="stylesheet" href="COVID game.css"
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+                                 inital-scale=1.0"
+    />
+    <title>COVID GAME PAGE</title>
+    <link rel="stylesheet" href="COVID game index.css" />
+    <link rel="stylesheet" href="COVID game.css" />
   </head>
   <body>
     <div class="container">
-      <div id="home" class="flex-colum flex-center">
-    <h1>Let's learn about COVID-19!</h1>
-        <a href="/COVID game.html" class="btn">PLAY</a>
-        <a href="/High Score.html" id="high-score-btn" class="btn">HIGHSCORE</a>
-        
+      <div id="game" class="justify-center flex-column">
+        <div id="hud">
+          <div class="hud-item">
+            <p id="progressText" class="hud-prefix">
+              QUESTION
+            </p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+            <div class="hud-item">
+              <p class="hud-prefix">
+                SCORE
+              </p>
+              <h1 class="hud-main-text" id="score">
+                0
+              </h1>
+            </div>
+          </div>
+          <h1 id="question"What is the name of the strain that causes COVID-19?>
+          
+          </h1>
+          <div class="choice-container">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text" data-number="SARS-Cov-2">SARS-Cov-2</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text" data-number="INFLUENZA A">INFLUENZA A</p>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="COVID game.js"></script>
   </body>
 </html>

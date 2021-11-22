@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
 <head> 
-    <link href="math.css" rel="stylesheet" type="text/css" />
-    <link href="tictactoe.css" rel="stylesheet" type="text/css" />
+   
+</head>
+<link href="tictactoe.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Poppins'rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -13,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-</head>
 <body>
     <style>
         #frame001 {
@@ -160,6 +160,7 @@
             message003.innerHTML = "";
             show001.innerHTML = "";
             message004.innerHTML = "";
+            message005.innerHTML = "" ;
             
         }
 
@@ -187,6 +188,7 @@
             message003.innerHTML = "";
             show001.innerHTML = "";
             message004.innerHTML = "";
+            message005.innerHTML = "" ;
         }
 
         function submit003() {
@@ -196,12 +198,12 @@
                 z++;
                 message003.innerHTML = "Correct";
                 message002.innerHTML = "";
-                message005.innerHTML = "The Correct Answer Was: " + (c003) ;
                 message004.innerHTML = "<button onclick=question004()>Next</button>";
             }
             else {
                 message003.innerHTML = "Incorrect";
-                message002.innerHTML = "";
+                message002.innerHTML = ""
+                message005.innerHTML = "The Correct Answer Was: " + (c003) ;
                 message004.innerHTML = "<button onclick=question004()>Next</button>";
             }
         }
@@ -213,6 +215,7 @@
             message003.innerHTML = "";
             show001.innerHTML = "";
             message004.innerHTML = "";
+            message005.innerHTML = "" ;
         }
 
         function submit004() {
@@ -227,6 +230,7 @@
             else {
                 message003.innerHTML = "Incorrect";
                 message002.innerHTML = "";
+                message005.innerHTML = "The Correct Answer Was: " + (d003) ;
                 message004.innerHTML = "<button onclick=question005()>Next</button>";
             }
         }
@@ -238,6 +242,7 @@
             message003.innerHTML = "";
             show001.innerHTML = "";
             message004.innerHTML = "";
+            message005.innerHTML = "" ;
         }
 
         function submit005() {
@@ -252,6 +257,7 @@
             else {
                 message003.innerHTML = "Incorrect";
                 message002.innerHTML = "";
+                message005.innerHTML = "The Correct Answer Was: " + (e003) ;
                 message004.innerHTML = "<button onclick=question006()>Next</button>";
             }
         }
@@ -262,7 +268,8 @@
             message002.innerHTML = "<input type=text id=input006 /> <button onclick=submit006()>Submit</button>";
             message003.innerHTML = "";
             show001.innerHTML = "";
-            message004.innerHTML = "";
+            message004.innerHTML = ""  
+            message005.innerHTML = "" ;
         }
 
         function submit006() {
@@ -277,6 +284,7 @@
             else {
                 message003.innerHTML = "Incorrect";
                 message002.innerHTML = "";
+                message005.innerHTML = "The Correct Answer Was: " + (f003) ;
                 message004.innerHTML = "<button onclick=question007()>Next</button>";
             }
         }
@@ -288,6 +296,7 @@
             message003.innerHTML = "";
             show001.innerHTML = "";
             message004.innerHTML = "";
+            message005.innerHTML = "" ;
         }
 
         function submit007() {
@@ -302,6 +311,7 @@
             else {
                 message003.innerHTML = "Incorrect";
                 message002.innerHTML = "";
+                message005.innerHTML = "The Correct Answer Was: " + (g003) ;
                 message004.innerHTML = "<button onclick=question008()>Next</button>";
             }
         }
@@ -313,6 +323,7 @@
             message003.innerHTML = "";
             show001.innerHTML = "";
             message004.innerHTML = "";
+            message005.innerHTML = "" ;
         }
 
         function submit008() {
@@ -327,6 +338,7 @@
             else {
                 message003.innerHTML = "Incorrect";
                 message002.innerHTML = "";
+                message005.innerHTML = "The Correct Answer Was: " + (h003) ;
                 message004.innerHTML = "<button onclick=question009()>Next</button>";
             }
         }
@@ -338,6 +350,7 @@
             message003.innerHTML = "";
             show001.innerHTML = "";
             message004.innerHTML = "";
+            message005.innerHTML = "" ;
         }
 
         function submit009() {
@@ -352,6 +365,7 @@
             else {
                 message003.innerHTML = "Incorrect";
                 message002.innerHTML = "";
+                message005.innerHTML = "The Correct Answer Was: " + (i003) ;
                 message004.innerHTML = "<button onclick=question010()>Next</button>";
             }
         }
@@ -363,6 +377,7 @@
             message003.innerHTML = "";
             show001.innerHTML = "";
             message004.innerHTML = "";
+            message005.innerHTML = "" ;
         }
 
         function submit010() {
@@ -377,6 +392,7 @@
             else {
                 message003.innerHTML = "Incorrect";
                 message002.innerHTML = "";
+                message005.innerHTML = "The Correct Answer Was: " + (j003) ;
                 message004.innerHTML = "<button onclick=end001()>End of Quiz</button>";
             }
         }
