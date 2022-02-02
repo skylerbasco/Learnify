@@ -1,21 +1,23 @@
 /* Main Dashboard */
 body{
-  position: relative;
+  position: absolute;
   width: 1440px;
   height: 600px;
   background: #C2E9FB;}
 /* Heading*/
 h1{
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
   line-height: 117px;
   text-align: center;
   color: #172972;
+  padding-bottom: 100px;
 }
 /*Boxes*/
 div{
+  margin-top: 100px;
   position: absolute;
   width: 226.76px;
   height: 226.76px;
@@ -94,4 +96,7 @@ a:active {
   position: absolute;
   top: 30px;
   left: 15px;
+}
+#logo{
+  top:0;
 }

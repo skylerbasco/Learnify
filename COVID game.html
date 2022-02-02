@@ -5,46 +5,121 @@
     <meta
       name="viewport"
       content="width=device-width, 
-                                 inital-scale=1.0"
+                        inital-scale=1.0"
     />
-    <title>COVID GAME PAGE</title>
-    <link rel="stylesheet" href="COVID game index.css" />
+    <title>COVID QUIZ</title>
     <link rel="stylesheet" href="COVID game.css" />
   </head>
   <body>
-    <div class="container">
-      <div id="game" class="justify-center flex-column">
-        <div id="hud">
-          <div class="hud-item">
-            <p id="progressText" class="hud-prefix">
-              QUESTION
-            </p>
-            <div id="progressBar">
-              <div id="progressBarFull"></div>
-            </div>
-            <div class="hud-item">
-              <p class="hud-prefix">
-                SCORE
-              </p>
-              <h1 class="hud-main-text" id="score">
-                0
-              </h1>
-            </div>
-          </div>
-          <h1 id="question"What is the name of the strain that causes COVID-19?>
-          
-          </h1>
-          <div class="choice-container">
-            <p class="choice-prefix">A</p>
-            <p class="choice-text" data-number="SARS-Cov-2">SARS-Cov-2</p>
-          </div>
-          <div class="choice-container">
-            <p class="choice-prefix">B</p>
-            <p class="choice-text" data-number="INFLUENZA A">INFLUENZA A</p>
-          </div>
-        </div>
+    <div class="form">
+      <h1>Question #1:What is the name of the strain that causes COVID-19?</h1>
+      <select id="strains">
+              <option value="SARS-Cov-2"> SARS-Cov-2 </option> 
+              <option value="Influenza A"> Influenza A</option>
+      <button onClick="check()">Submit</button>
+    </select>
+      <p id="result"></p>
       </div>
+    
+     <div class="form">
+      <h1>Question #2:Which of the following are symptoms of COVID-19?</h1>
+      <select id="symptoms">
+              <option value="Coughing"> Coughing </option> 
+              <option value="Sneezing">Sneezing</option>
+              <option value="Sore & Dry throat">Sore & Dry throat</option> 
+              <option value="Trouble breathing">Trouble breathing</option>
+              <option value="None of the above">None of the above"</option>
+              <option value="All of the above">All of the above</option> 
+      <button onClick="check()">Submit</button>
+    </select>
+      <p id="result"></p>
+      </div>
+    
+    <h1>Question #3:Which of the following is a precaution we can take toward the COVID-19 pandemic?</h1>
+      <select id="precaution">
+              <option value="Wearing a mask">Wearing a mask</option> 
+              <option value="Completing proper research about the vaccine">Completing proper research about the vaccine</option>
+              <option value="Scheduling a vaccine appointment at a local pharmacy">Scheduling a vaccine appointment at a local pharmacy</option> 
+              <option value="Keeping a social distance of 6 feet">Keeping a social distance of 6 feet</option>
+              <option value="All of the above">All of the above</option> 
+      <button onClick="check()">Submit</button>
+    </select>
+      <p id="result"></p>
+      </div>
+    
+  <h1>Question #4:How does the COVID-19 virus spread?</h1>
+      <select id="spread">
+              <option value="Touching our eyes, nose, and mouth without washing our hands">Touching our eyes, nose, and mouth without washing our hands</option> 
+              <option value="Staying a safe social distance from family and friends">Staying a safe social distance from family and friends</option>
+              <option value="In large crowds">In large crowds</option> 
+              <option value="Getting tested frequently">Getting tested frequently</option>
+              <option value="A&C">A&C</option> 
+      <button onClick="check()">Submit</button>
+    </select>
+      <p id="result"></p>
+      </div>
+    
+<h1>Question #5:What should you do if you experience COVID-19 like symptoms?</h1>
+<select id="experience">
+              <option value="Wait to see if they become worse">Wait to see if they become worse</option> 
+              <option value="Stay at home">Stay at home</option>
+              <option value="Call your doctor">Call your doctor</option> 
+              <option value="Contact the emergency room">Contact the emergency room</option>
+              <option value="B,C,D">B,C,D</option> 
+      <button onClick="check()">Submit</button>
+    </select>
+      <p id="result"></p>
+      </div>
+
+<div class="popup" id="popup-1">
+  <div class="overlay">
+    <div class="content">
+      <div onclick="togglePopup()" class="close-btn">&times;</div>
+      <h1>About COVID</h1>
+      <p>
+        Coronavirus is infectious. 
+That is, it can make people sick by transferring from one person's 
+body to another's body when they touch or spend time together. 
+Coronavirus can spread from one person to another before you become ill.
+A fever, a dry cough, and some difficulty breathing are 
+common symptoms of coronavirus infection.
+Coronavirus can affect anyone. It can be quite problematic 
+for the elderly or those suffering from severe medical conditions.
+
+Until scientists figure out how to eliminate the coronavirus, 
+you and your family may have to make, more significant changes.
+You might need to avoid congested areas. 
+This is because crowds make it easier for coronavirus to spread and infect more people.
+For the same reason, your parents may not work as much or may try to work from home. 
+You might not be able to go to school or hangout with friends.
+When you go outside, you may notice people wearing masks.   
+        
+
+Stay at home unless you require medical attention.
+Keep an eye on your symptoms. 
+If your symptoms worsen, contact your healthcare practitioner right at once.
+DO NOT WAIT.Rest and drink plenty of water. 
+To feel better, take over-the-counter medications 
+If you have a medical appointment, advise your doctor 
+ahead of time that you have COVID-19 or may have it.
+Keep to one room and away from other people in your house. 
+Wear a mask if you must be among others.   
+      </p>
     </div>
+  </div>
+</div>
+
+<button onclick="togglePopup()">
+  Let's Learn!
+</button>
+
+
     <script src="COVID game.js"></script>
+    <button type='button' class='return'>
+      Check!
+</button>
+<button type='button' class='return'>
+  <a href='index.html'>Return</a>
+</button>
   </body>
 </html>
